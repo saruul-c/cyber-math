@@ -5,11 +5,11 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Image
-        source={require('./assets/chick.png')} // Replace with the actual image file
+        source={require('./assets/Enkhtulga_chick.png')} // Replace with the actual image file
         style={styles.chick}
       />
       <Image
-        source={require('./assets/cybermathtext.png')} // Replace with the actual image file
+        source={require('./assets/Enkhtulga_cybermathtext.png')} // Replace with the actual image file
         style={styles.mathText}
       />
       <Text style={styles.description}>
