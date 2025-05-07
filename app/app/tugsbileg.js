@@ -1,12 +1,11 @@
 import React from 'react';
 import { View, Image, StyleSheet, Dimensions, SafeAreaView } from 'react-native';
-
+import topCurveImage from './images/Tugsbileg1.png';
+import logoImage from './images/Tugsbileg2.png';
+import bottomCurveImage from './images/Tugsbileg3.png'
 const { width, height } = Dimensions.get('window');
 
 const CyberMathSplashScreen = () => {
-  const topCurveImage = require('./assets/top_curve.png');
-  const logoImage = require('./assets/cybermath_logo.png');
-  const bottomCurveImage = require('./assets/bottom_curve.png');
 
   return (
     <SafeAreaView style={styles.container}>

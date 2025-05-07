@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "app/screens/LoginScreen.js", "app/munkhod.js", "app/screens/Otgon_Erdene.js", "app/tugsbileg.js", "app/(tabs)/index.js", "app/(tabs)/explore.js", "app/(tabs)/_layout.js", "app/_layout.js"  ]
 }

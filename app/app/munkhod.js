@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
+import { useRouter } from 'expo-router';
+import EnkhtulgaText from './images/Munkh_Od.png';
 
-const OnboardingScreen = ({ navigation }) => {
+const MunkhOd = () => {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
-      <Image
-        source={require('./assets/onboarding-image.png')}
-        style={styles.image}
-        resizeMode="contain"
-      />
+      <Image source={EnkhtulgaText} style={styles.image} />
       <Text style={styles.title}>Free, Fun & Effective</Text>
       <Text style={styles.subtitle}>
         Learning with Duolingo is fun, and research shows that it works.
@@ -16,19 +16,19 @@ const OnboardingScreen = ({ navigation }) => {
 
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate('NextScreen')}
+        onPress={() => router.push('./phone')}
       >
         <Text style={styles.buttonArrow}>→</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+      <TouchableOpacity onPress={() => router.push('./phone')}>
         <Text style={styles.skipText}>Skip</Text>
       </TouchableOpacity>
     </View>
   );
 };
 
-export default OnboardingScreen;
+export default MunkhOd;
 
 const styles = StyleSheet.create({
   container: {
