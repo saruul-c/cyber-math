@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <title>LocalStorage Demo</title>
+</head>
+<body>
+  <h2>🧠 LocalStorage хадгалалт demo</h2>
+
+  <label>Нэр оруулах:</label>
+  <input id="username" placeholder="Жишээ: Сараа" />
+  <br /><br />
+
+  <button onclick="saveName()">Хадгалах</button>
+  <button onclick="showName()">Харах</button>
+  <button onclick="removeName()">Устгах</button>
+  <button onclick="clearStorage()">Бүх хадгалалт арилгах</button>
+
+  <p id="output"></p>
+
+  <script>
+    function saveName() {
+      const name = document.getElementById('username').value;
+      localStorage.setItem('userName', name);
+      document.getElementById('output').innerText = '✅ Хадгаллаа: ' + name;
+    }
+
+    function showName() {
+      const saved = localStorage.getItem('userName');
+      document.getElementById('output').innerText = saved ? '📦 Нэр: ' + saved : '⚠️ Хадгалсан нэр олдсонгүй';
+    }
+
+    function removeName() {
+      localStorage.removeItem('userName');
+      document.getElementById('output').innerText = '🗑️ Нэр устгалаа';
+    }
+
+    function clearStorage() {
+      localStorage.clear();
+      document.getElementById('output').innerText = '❌ Бүх хадгалалт арилгалаа';
+    }
+  </script>
+</body>
+</html>

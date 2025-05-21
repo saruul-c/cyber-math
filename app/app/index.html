@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Local Storage Demo</title>
+</head>
+<body>
+  <input id="username" placeholder="Нэрээ оруулна уу" />
+  <button onclick="saveName()">Хадгалах</button>
+  <button onclick="showName()">Харуулах</button>
+
+  <script>
+    function saveName() {
+      const name = document.getElementById('username').value;
+      localStorage.setItem('userName', name);
+      alert('✅ Хадгаллаа: ' + name);
+    }
+
+    function showName() {
+      const saved = localStorage.getItem('userName');
+      alert('📦 Хадгалсан утга: ' + saved);
+    }
+  </script>
+</body>
+</html>

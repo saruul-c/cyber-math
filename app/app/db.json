@@ -1,0 +1,39 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "title": "△ABC гурвалжны C талын урт хэд вэ?",
+      "image": "triangle.png",
+      "level": "easy",
+      "choices": [
+        "5 см",
+        "6 см",
+        "7 см"
+      ],
+      "answer": "6 см"
+    }
+  ],
+  "answers": [
+    {
+      "id": "65ce",
+      "userId": 1,
+      "questionId": 1,
+      "answer": "12",
+      "correct": false
+    },
+    {
+      "id": "88c2",
+      "userId": 1,
+      "questionId": 1,
+      "answer": "6 см",
+      "correct": true
+    }
+  ],
+  "scores": [],
+  "users": [
+    {
+      "id": "1",
+      "name": "Gantulga"
+    }
+  ]
+}

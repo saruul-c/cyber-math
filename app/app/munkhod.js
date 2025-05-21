@@ -16,12 +16,12 @@ const MunkhOd = () => {
 
       <TouchableOpacity
         style={styles.button}
-        onPress={() => router.push('./phone')}
+        onPress={() => router.push('./Enkhtulga')}
       >
         <Text style={styles.buttonArrow}>→</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => router.push('./phone')}>
+      <TouchableOpacity onPress={() => router.push('./Enkhtulga')}>
         <Text style={styles.skipText}>Skip</Text>
       </TouchableOpacity>
     </View>
