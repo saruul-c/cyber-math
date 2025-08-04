@@ -9,7 +9,7 @@
 
 Энд дарж туршаарай:
 
-![Cyber Math Demo]([https://your-screenshot-link.com/screenshot.png](https://github.com/saruul-c/cyber-math/blob/main/Capture.PNG))
+![Cyber Math Demo]((https://github.com/saruul-c/cyber-math/blob/main/Capture.PNG))
 
 
 # ✨ cyber-math
